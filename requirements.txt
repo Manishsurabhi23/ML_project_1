@@ -1,0 +1,15 @@
+seaborn
+scikit-learn
+pandas
+numpy
+matplotlib
+langchain
+openai
+requests
+beautifulsoup4
+pyspark
+flask
+sqlalchemy
+django
+
+-e .
