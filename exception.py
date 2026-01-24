@@ -24,8 +24,9 @@ class CustomException(Exception):
         return self.error_message
     
 # Example usage:
-# if __name__ == "__main__":
-#     try:
-#         1 / 1
-#     except Exception as e:
-#         raise CustomException(e, sys)
+if __name__ == "__main__":
+    try:
+        1 / 1
+    except Exception as e:
+        raise CustomException(e, sys)
+

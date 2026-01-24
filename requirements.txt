@@ -11,5 +11,7 @@ pyspark
 flask
 sqlalchemy
 django
+catboost
+xgboost
 
 -e .
