@@ -1,0 +1,9 @@
+[2026-01-25 09:46:22,842] 25 root - INFO - Data Ingestion started
+[2026-01-25 09:46:22,940] 28 root - INFO - Dataset read as pandas dataframe
+[2026-01-25 09:46:22,951] 33 root - INFO - Raw data saved
+[2026-01-25 09:46:22,971] 40 root - INFO - Ingestion of data is completed
+[2026-01-25 09:46:23,031] 76 root - INFO - Train and test data loaded successfully
+[2026-01-25 09:46:23,031] 56 root - INFO - Numerical and categorical pipelines created
+[2026-01-25 09:46:23,038] 88 root - INFO - Applying preprocessing on training and testing data
+[2026-01-25 09:46:23,081] 19 root - INFO - Object saved successfully at artifacts\preprocessor.pkl
+[2026-01-25 09:46:23,082] 112 root - INFO - Data transformation completed successfully
