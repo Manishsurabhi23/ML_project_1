@@ -1,0 +1,22 @@
+[2026-01-25 14:16:58,001] 29 root - INFO - Data Ingestion started
+[2026-01-25 14:16:58,111] 32 root - INFO - Dataset read as pandas dataframe
+[2026-01-25 14:16:58,123] 37 root - INFO - Raw data saved
+[2026-01-25 14:16:58,138] 44 root - INFO - Ingestion of data is completed
+[2026-01-25 14:16:58,196] 76 root - INFO - Train and test data loaded successfully
+[2026-01-25 14:16:58,197] 56 root - INFO - Numerical and categorical pipelines created
+[2026-01-25 14:16:58,201] 88 root - INFO - Applying preprocessing on training and testing data
+[2026-01-25 14:16:58,226] 20 root - INFO - Object saved successfully at artifacts\preprocessor.pkl
+[2026-01-25 14:16:58,227] 112 root - INFO - Data transformation completed successfully
+[2026-01-25 14:16:58,227] 33 root - INFO - Splitting training and testing input data
+[2026-01-25 14:16:58,540] 34 root - INFO - Random Forest R2 Score: 0.8498596953274673
+[2026-01-25 14:16:58,543] 34 root - INFO - Decision Tree R2 Score: 0.7186633922142991
+[2026-01-25 14:16:58,621] 34 root - INFO - Gradient Boosting R2 Score: 0.872201604498644
+[2026-01-25 14:16:58,627] 34 root - INFO - Linear Regression R2 Score: 0.8804332983749564
+[2026-01-25 14:16:58,697] 34 root - INFO - XGB Regressor R2 Score: 0.8212204901494256
+[2026-01-25 14:16:59,518] 34 root - INFO - CatBoost Regressor R2 Score: 0.8518305378322716
+[2026-01-25 14:16:59,611] 34 root - INFO - AdaBoost Regressor R2 Score: 0.8513489657577934
+[2026-01-25 14:17:03,631] 34 root - INFO - KNeighbors Regressor R2 Score: 0.47561174068704326
+[2026-01-25 14:17:03,631] 54 root - INFO - Models evaluation completed
+[2026-01-25 14:17:03,631] 64 root - INFO - Best model found: Linear Regression with score 0.8804332983749564
+[2026-01-25 14:17:03,631] 68 root - INFO - Saving the best model object
+[2026-01-25 14:17:03,634] 20 root - INFO - Object saved successfully at artifacts\model.pkl

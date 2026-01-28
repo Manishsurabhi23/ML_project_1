@@ -1,0 +1,48 @@
+[2026-01-27 09:36:23,936] 29 root - INFO - Data Ingestion started
+[2026-01-27 09:36:23,942] 32 root - INFO - Dataset read as pandas dataframe
+[2026-01-27 09:36:23,947] 37 root - INFO - Raw data saved
+[2026-01-27 09:36:23,955] 44 root - INFO - Ingestion of data is completed
+[2026-01-27 09:36:23,997] 76 root - INFO - Train and test data loaded successfully
+[2026-01-27 09:36:23,997] 56 root - INFO - Numerical and categorical pipelines created
+[2026-01-27 09:36:23,999] 88 root - INFO - Applying preprocessing on training and testing data
+[2026-01-27 09:36:24,026] 21 root - INFO - Object saved successfully at artifacts\preprocessor.pkl
+[2026-01-27 09:36:24,026] 112 root - INFO - Data transformation completed successfully
+[2026-01-27 09:36:24,027] 34 root - INFO - Splitting training and testing input data
+[2026-01-27 09:36:24,027] 47 root - INFO - Training model: Random Forest
+[2026-01-27 09:36:53,067] 63 root - INFO - Random Forest best params: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 500}
+[2026-01-27 09:36:53,719] 74 root - INFO - Random Forest R2 Score: 0.8242412074511716
+[2026-01-27 09:36:53,719] 47 root - INFO - Training model: Decision Tree
+[2026-01-27 09:36:54,080] 63 root - INFO - Decision Tree best params: {'max_depth': 5, 'max_features': None, 'min_samples_leaf': 4, 'min_samples_split': 2}
+[2026-01-27 09:36:54,081] 74 root - INFO - Decision Tree R2 Score: 0.8240836604319065
+[2026-01-27 09:36:54,081] 47 root - INFO - Training model: Gradient Boosting
+[2026-01-27 09:37:05,857] 63 root - INFO - Gradient Boosting best params: {'learning_rate': 0.05, 'max_depth': 3, 'min_samples_split': 5, 'n_estimators': 200, 'subsample': 0.8}
+[2026-01-27 09:37:06,074] 74 root - INFO - Gradient Boosting R2 Score: 0.878633790059148
+[2026-01-27 09:37:06,074] 47 root - INFO - Training model: Linear Regression
+[2026-01-27 09:37:06,112] 63 root - INFO - Linear Regression best params: {'fit_intercept': True}
+[2026-01-27 09:37:06,115] 74 root - INFO - Linear Regression R2 Score: 0.8804332983749564
+[2026-01-27 09:37:06,115] 47 root - INFO - Training model: XGB Regressor
+[2026-01-27 09:37:32,065] 63 root - INFO - XGB Regressor best params: {'colsample_bytree': 0.8, 'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 200, 'reg_alpha': 1, 'reg_lambda': 1.5, 'subsample': 0.8}
+[2026-01-27 09:37:32,115] 74 root - INFO - XGB Regressor R2 Score: 0.8697720668327278
+[2026-01-27 09:37:32,115] 47 root - INFO - Training model: CatBoost Regressor
+[2026-01-27 09:37:45,483] 63 root - INFO - CatBoost Regressor best params: {'depth': 4, 'iterations': 200, 'l2_leaf_reg': 3, 'learning_rate': 0.05}
+[2026-01-27 09:37:45,597] 74 root - INFO - CatBoost Regressor R2 Score: 0.86970507719983
+[2026-01-27 09:37:45,597] 47 root - INFO - Training model: AdaBoost Regressor
+[2026-01-27 09:37:48,940] 63 root - INFO - AdaBoost Regressor best params: {'learning_rate': 1.0, 'loss': 'exponential', 'n_estimators': 200}
+[2026-01-27 09:37:49,215] 74 root - INFO - AdaBoost Regressor R2 Score: 0.8488161756342045
+[2026-01-27 09:37:49,216] 47 root - INFO - Training model: KNeighbors Regressor
+[2026-01-27 09:37:49,523] 63 root - INFO - KNeighbors Regressor best params: {'metric': 'manhattan', 'n_neighbors': 15, 'weights': 'distance'}
+[2026-01-27 09:37:51,567] 74 root - INFO - KNeighbors Regressor R2 Score: 0.5886807802708585
+[2026-01-27 09:37:51,568] 47 root - INFO - Training model: Lasso
+[2026-01-27 09:37:51,619] 63 root - INFO - Lasso best params: {'alpha': 0.01, 'max_iter': 1000}
+[2026-01-27 09:37:51,620] 74 root - INFO - Lasso R2 Score: 0.8806792203277674
+[2026-01-27 09:37:51,620] 47 root - INFO - Training model: Ridge
+[2026-01-27 09:37:51,679] 63 root - INFO - Ridge best params: {'alpha': 1, 'solver': 'auto'}
+[2026-01-27 09:37:51,680] 74 root - INFO - Ridge R2 Score: 0.8805671790733922
+[2026-01-27 09:37:51,680] 47 root - INFO - Training model: ElasticNet
+[2026-01-27 09:37:51,806] 63 root - INFO - ElasticNet best params: {'alpha': 0.01, 'l1_ratio': 0.5, 'max_iter': 1000}
+[2026-01-27 09:37:51,810] 74 root - INFO - ElasticNet R2 Score: 0.8808642728954642
+[2026-01-27 09:37:51,810] 134 root - INFO - Models evaluation completed
+[2026-01-27 09:37:51,810] 144 root - INFO - Best model found: ElasticNet with score 0.8808642728954642
+[2026-01-27 09:37:51,810] 148 root - INFO - Saving the best model object
+[2026-01-27 09:37:51,822] 21 root - INFO - Object saved successfully at artifacts\model.pkl
+[2026-01-27 09:37:51,823] 162 root - ERROR - Exception occurred in model trainer

@@ -1,0 +1,12 @@
+[2026-01-28 10:26:11,727] 97 werkzeug - WARNING -  * Debugger is active!
+[2026-01-28 10:26:11,743] 97 werkzeug - INFO -  * Debugger PIN: 106-643-899
+[2026-01-28 10:26:23,222] 97 werkzeug - INFO - 127.0.0.1 - - [28/Jan/2026 10:26:23] "GET / HTTP/1.1" 200 -
+[2026-01-28 10:26:23,298] 97 werkzeug - INFO - 127.0.0.1 - - [28/Jan/2026 10:26:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2026-01-28 10:26:34,915] 97 werkzeug - INFO - 127.0.0.1 - - [28/Jan/2026 10:26:34] "GET /predict_data HTTP/1.1" 200 -
+[2026-01-28 10:26:52,694] 42 root - ERROR - Error occurred during prediction in Flask app
+[2026-01-28 10:26:52,836] 97 werkzeug - INFO - 127.0.0.1 - - [28/Jan/2026 10:26:52] "[35m[1mPOST /predict_data HTTP/1.1[0m" 500 -
+[2026-01-28 10:26:53,051] 97 werkzeug - INFO - 127.0.0.1 - - [28/Jan/2026 10:26:53] "[36mGET /predict_data?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2026-01-28 10:26:53,059] 97 werkzeug - INFO - 127.0.0.1 - - [28/Jan/2026 10:26:53] "[36mGET /predict_data?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2026-01-28 10:26:53,124] 97 werkzeug - INFO - 127.0.0.1 - - [28/Jan/2026 10:26:53] "GET /predict_data?__debugger__=yes&cmd=resource&f=console.png&s=hHOlfeOm23aw8xmujIua HTTP/1.1" 200 -
+[2026-01-28 10:26:53,143] 97 werkzeug - INFO - 127.0.0.1 - - [28/Jan/2026 10:26:53] "[36mGET /predict_data?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2026-01-28 10:28:39,058] 97 werkzeug - INFO -  * Detected change in 'D:\\krish_naik_data_science_course\\ML_project_1\\src\\pipeline\\predict_pipeline.py', reloading

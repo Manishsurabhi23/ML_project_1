@@ -1,0 +1,13 @@
+[2026-01-28 11:01:58,397] 97 werkzeug - WARNING -  * Debugger is active!
+[2026-01-28 11:01:58,411] 97 werkzeug - INFO -  * Debugger PIN: 106-643-899
+[2026-01-28 11:02:08,640] 97 werkzeug - INFO - 127.0.0.1 - - [28/Jan/2026 11:02:08] "GET / HTTP/1.1" 200 -
+[2026-01-28 11:02:13,191] 97 werkzeug - INFO - 127.0.0.1 - - [28/Jan/2026 11:02:13] "GET /predict_data HTTP/1.1" 200 -
+[2026-01-28 11:02:28,452] 36 root - INFO - Dataframe created successfully for prediction
+[2026-01-28 11:02:28,452] 15 root - INFO - Starting prediction pipeline
+[2026-01-28 11:02:28,496] 36 root - INFO - Object loaded successfully from artifacts\model.pkl
+[2026-01-28 11:02:28,564] 36 root - INFO - Object loaded successfully from artifacts\preprocessor.pkl
+[2026-01-28 11:02:28,617] 21 root - INFO - Data preprocessed successfully for prediction
+[2026-01-28 11:02:28,617] 23 root - INFO - Prediction completed successfully
+[2026-01-28 11:02:28,617] 39 root - INFO - Prediction successful
+[2026-01-28 11:02:28,618] 97 werkzeug - INFO - 127.0.0.1 - - [28/Jan/2026 11:02:28] "POST /predict_data HTTP/1.1" 200 -
+[2026-01-28 11:14:33,613] 97 werkzeug - INFO -  * Detected change in 'D:\\krish_naik_data_science_course\\ML_project_1\\app.py', reloading
