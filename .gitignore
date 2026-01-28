@@ -2,3 +2,4 @@ env
 .env
 artifacts
 student_performance_data
+app.py
