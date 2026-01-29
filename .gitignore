@@ -3,3 +3,5 @@ env
 artifacts
 student_performance_data
 app.py
+hello_world
+docker_compose
