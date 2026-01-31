@@ -6,16 +6,12 @@ matplotlib
 langchain
 openai
 requests
-beautifulsoup4
-pyspark
 flask
 sqlalchemy
 django
 catboost
 xgboost
 dill
-pickle
-flask
 
 
 -e .

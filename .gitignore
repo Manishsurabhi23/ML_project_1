@@ -5,3 +5,5 @@ student_performance_data
 app.py
 hello_world
 docker_compose
+catboost_info
+logs

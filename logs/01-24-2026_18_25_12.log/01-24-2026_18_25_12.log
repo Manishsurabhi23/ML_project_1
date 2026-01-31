@@ -1,4 +1,0 @@
-[2026-01-24 18:25:33,398] 24 root - INFO - Data Ingestion started
-[2026-01-24 18:25:33,498] 27 root - INFO - Dataset read as pandas dataframe
-[2026-01-24 18:25:33,544] 32 root - INFO - Raw data saved
-[2026-01-24 18:25:33,558] 39 root - INFO - Ingestion of data is completed
