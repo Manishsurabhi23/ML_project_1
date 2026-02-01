@@ -78,17 +78,17 @@ jobs:
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v1
 
-      - name: Pull latest image
-        run: |
-          docker pull ${{ secrets.AWS_ECR_LOGIN_URL }}/${{ secrets.AWS_ECR_REPOSITORY_NAME }}:latest
-
       - name: Stop and remove container if running
         run: |
           docker rm -f mltest || true
 
-      - name: Clean old images
+      - name: Free disk space
         run: |
-          docker image prune -f
+          docker system prune -af --volumes
+
+      - name: Pull latest image
+        run: |
+          docker pull ${{ secrets.AWS_ECR_LOGIN_URL }}/${{ secrets.AWS_ECR_REPOSITORY_NAME }}:latest
 
       - name: Run Docker Image to serve users
         run: |
