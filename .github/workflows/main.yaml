@@ -78,13 +78,34 @@ jobs:
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v1
 
+      - name: Disk space before cleanup
+        run: df -h /
+
       - name: Stop and remove container if running
         run: |
           docker rm -f mltest || true
 
       - name: Free disk space
         run: |
+          # Remove all stopped containers
+          docker container prune -f
+          # Remove all unused images (including intermediate)
+          docker image prune -af
+          # Remove all unused volumes
+          docker volume prune -f
+          # Remove all unused networks
+          docker network prune -f
+          # Nuclear option: remove everything not in use
           docker system prune -af --volumes
+          # Clear systemd journal logs
+          sudo journalctl --vacuum-size=50M || true
+          # Clear apt cache
+          sudo apt-get clean || true
+          # Remove old log files
+          sudo find /var/log -type f -name "*.log" -exec truncate -s 0 {} \; || true
+
+      - name: Disk space after cleanup
+        run: df -h /
 
       - name: Pull latest image
         run: |
